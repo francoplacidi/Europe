@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Viajar</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css" />
+
+    <!--ICON-->
+    <link rel="icon" href="img/logo.ico" />
+    
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <!--Slider-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!--Moment-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/es-us.min.js"></script>
+
+    <!--My scripts-->
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </head>
+  <body>
+    <div id="selector-theme">
+      <div id="to-green"></div>
+      <div id="to-red"></div>
+      <div id="to-blue"></div>
+    </div>
+
+    <!--Dentro de section va a estar mi pagina, es decir, que actua como un recuadro o un margen-->
+    <section id="global">
+      <!--Cabecera-->
+      <header>
+        <div id="logo">
+          <h1>Europa</h1>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <nav id="menu">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="watch.html">Reloj</a></li>
+            <li class="more"><a href="about.html">Mas</a></li>
+            <!--li><a href="contact.html">Contacto</a></li-->
+          </ul>
+        </nav>
+      </header>
+      <!--Slider-->
+      <div id="slider">
+        <div class="gallery">
+          <div><img src="img/diorama.jpg" alt="" title="DIORAMA" height="350px" width="890" /></div>
+          <div><img src="img/coliseo.jpg" alt="" title="COLISEO" height="350px" width="890" /></div>
+          <div><img src="img/italia.jpg" alt="" title="ITALIA" height="350px" /></div>
+          <div><img src="img/playa.jpg" alt="" title="CALA-COMTE" height="350px" /></div>
+          <div><img src="img/venezia.jpg" alt="" title="VENEZIA" height="350px" /></div>
+        </div>
+      </div>
+      <!--Contenido-->
+      <section id="content">
+        <div id="posts">
+          <!--Cargar posts desde json-->
+        </div>
+        <aside id="sidebar">
+          <div id="about">
+            <h4><span>Castillo</span></h4>
+            <img src="img/castle.jpg" alt="" />
+            <br />
+            <br />
+            <p>
+              Los castillos de Europa son generalmente de la Edad Media. Tienen
+              muras muy espesas y su principal función era la defensa de la
+              ciudad. Los palacios de Europa son decorados y atractivos ya que
+              se usaban como residencia de reyes, princesas y en general de
+              miembros de familias reales o nobles.
+            </p>
+          </div>
+
+          <div id="login">
+            <h4><span>Identificate</span></h4>
+            <form>
+              <label for="nombre"> Nombre </label>
+              <input type="text" name="nombre" id="form_name" />
+              <label for="email"> Correo </label>
+              <input type="text" name="email" />
+              <label for="password"> Contrase&ntilde;a </label>
+              <input type="password" name="password" id="for_name" />
+
+              <input type="submit" value="Entrar" />
+            </form>
+          </div>
+        </aside>
+        <div class="clearfix"></div>
+      </section>
+      <!--div class="qr">
+		    <img src="img/qr.jpg" alt="">
+		  </div-->
+    </section>
+    <footer>
+      Vola por Europa &copy;
+      <a href="#" class="upload">Ir arriba &uArr;</a>
+    </footer>
+  </body>
+</html>
